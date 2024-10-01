@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signature App</title>
     <style>
-        body{
+        /* body{
             background-color: #424242;
-        }
+        } */
         .main{
             position: absolute;
             top: 50%;
@@ -41,14 +41,17 @@
             margin: 10px auto;
             width: 50%;
         }
+
     </style>
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <div class="main">
         <div class="top">
             <div class="block">
                 <p>Text Color Picker</p>
-                <input class="form-control" type="color" id="canvasColor"/>
+                <input class="form-control" type="color" id="colorPicker"/>
 
             </div>
             
@@ -61,7 +64,7 @@
 
             <div class="block">
                 <p>Font-size</p>
-                <select id="font-size">
+                <select id="fontPicker">
                     <option value="5">5px</option>
                     <option value="10">10px</option>
                     <option value="15">15px</option>
@@ -80,13 +83,15 @@
 
 
         <div class="bottom">
-            <button type="button" class="btn btn-danger" id="clearbutton">Clear</button>
+            <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
 
-            <button type="button" class="btn btn-success" id="savebutton">Save</button>
+            <button type="button" class="btn btn-success" id="saveButton">Save</button>
 
-            <button type="button" class="btn btn-danger" id="retrivebutton">Retrive</button>
+            <button type="button" class="btn btn-danger" id="retriveButton">Retrive</button>
 
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
